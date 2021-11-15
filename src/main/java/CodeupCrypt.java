@@ -1,6 +1,5 @@
 public class CodeupCrypt {
     public static double version;
-
     public static String hashPassword(String input){
         String hashed = "";
         for(char character : input.toCharArray()){
@@ -31,7 +30,6 @@ public class CodeupCrypt {
         }
         return hashed;
     }
-
     public static boolean checkPassword(String password, String hashed){
         return hashed.equals(hashPassword(password));
     }
