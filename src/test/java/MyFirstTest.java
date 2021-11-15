@@ -76,8 +76,11 @@ public class MyFirstTest {
     public void testIfCodeupNameIsEquals() {
         String expected = "Codeup";
         String actual = "Codeup";
-
         assertEquals(expected, actual);
+
+        String expected2 = "one";
+        String actual2 = "two";
+        assertNotEquals(expected2, actual2);
     }
 
     @Test
